@@ -1,7 +1,9 @@
-The full sized H&E images can be downloaded here and are ~2.4GB each:
+Download image from here.
+
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240429
 
-GEX_C73_A1_Merged.tif
-GEX_C73_B1_Merged.tif
-GEX_C73_C1_Merged.tif
-GEX_C73_D1_Merged.tif
+4 datasets
+GSM7697868_GEX_C73_A1_Merged.tiff.gz
+GSM7697869_GEX_C73_B1_Merged.tiff.gz
+GSM7697870_GEX_C73_C1_Merged.tiff.gz
+GSM7697871_GEX_C73_D1_Merged.tiff.gz
