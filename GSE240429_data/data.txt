@@ -1,9 +1,5 @@
-Download image from here.
+Download cell spot data from here.
 
-https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE240429
+https://drive.google.com/drive/folders/1zssdBgGyzy3Jl9ISdWd1pEZKVhf1VRGz?usp=sharing
 
-4 datasets
-GSM7697868_GEX_C73_A1_Merged.tiff.gz
-GSM7697869_GEX_C73_B1_Merged.tiff.gz
-GSM7697870_GEX_C73_C1_Merged.tiff.gz
-GSM7697871_GEX_C73_D1_Merged.tiff.gz
+
