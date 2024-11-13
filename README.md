@@ -27,14 +27,19 @@ Install Environment:
    
    (1) download the iamge data.
    ```bash
-   $ cd /path/to/AD_43SNP.zip
+   $ cd /path/to/image
    $ gdown --folder https://drive.google.com/drive/folders/1zssdBgGyzy3Jl9ISdWd1pEZKVhf1VRGz
+   ```
    
    (2) download the GSE data.
    ```bash
-   $ cd /path/to/Uni
-   $ python dataset_making.py
+   $ cd /path/GSE24029_data
+   $ wget -O GSM7697868_GEX_C73_A1_Merged.tiff.gz "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM7697868&format=file&file=GSM7697868%5FGEX%5FC73%5FA1%5FMerged%2Etiff%2Egz"
+   $ wget -O GSM7697869_GEX_C73_B1_Merged.tiff.gz "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM7697869&format=file&file=GSM7697869%5FGEX%5FC73%5FB1%5FMerged%2Etiff%2Egz"
+   $ wget -O GSM7697871_GEX_C73_D1_Merged.tiff.gz "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM7697871&format=file&file=GSM7697871%5FGEX%5FC73%5FD1%5FMerged%2Etiff%2Egz"
+   $ wget -O GSM7697870_GEX_C73_C1_Merged.tiff.gz "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM7697870&format=file&file=GSM7697870%5FGEX%5FC73%5FC1%5FMerged%2Etiff%2Egz"
    ```
+
    (3) Train the model.
    ```bash
    $ cd /path/to/Uni
