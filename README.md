@@ -53,13 +53,9 @@ Install Environment:
    $ python infer.py
    ```
 
-### Train the BrainClip with SNP or Label.
-
-We also provide training code using only SNPs or labels. If you want to try it, please visit the [SNP](https://github.com/QSong-github/BrainCLIP/tree/main/SNP) folder or [Label](https://github.com/QSong-github/BrainCLIP/tree/main/Label) folder.
 
 
 ## Quick start
 
-If you want to use our model, you can download the pre-trained BrainClip model from [here](https://github.com/QSong-github/BrainCLIP/tree/main/save) and quickly try it by the [tutorial](https://github.com/QSong-github/BrainCLIP/blob/main/tutorial.ipynb).
-
+If you want to use our model, you can download the pre-trained HEClip model from [here](https://github.com/QSong-github/BrainCLIP/tree/main/save) and quickly try it by the 'infer.py.'
    
