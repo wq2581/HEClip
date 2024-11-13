@@ -9,7 +9,7 @@ This code is prepared for **"BrainClip"**.
 ### Abstract
 
 
-![The flowchart.](./heclip_00.pdf)
+![The flowchart.](./heclip_00.png)
 
 ## Installation
 Download BrainClip:
