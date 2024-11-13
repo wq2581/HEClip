@@ -42,7 +42,7 @@ Install Environment:
 
    (3) Train the model.
    ```bash
-   $ cd /path/to/main
+   $ cd /path/to/main.py
    $ python main.py
    ```
    
@@ -50,7 +50,7 @@ Install Environment:
 
    (4) Inference.
    ```bash
-   $ cd /path/to/main
+   $ cd /path/to/infer.py
    $ python infer.py
    ```
 
