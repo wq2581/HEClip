@@ -34,7 +34,7 @@ Install Environment:
    $ unzip reukbb.zip
    ```
    
-   (2) Build the dataset.
+   (2) download the GSE data.
    ```bash
    $ cd /path/to/Uni
    $ python dataset_making.py
@@ -49,7 +49,6 @@ Install Environment:
 
    (4) Inference.
    ```bash
-   $ cd /path/to/Uni
    $ python infer.py
    ```
 
@@ -57,5 +56,5 @@ Install Environment:
 
 ## Quick start
 
-If you want to use our model, you can download the pre-trained HEClip model from [here](https://github.com/QSong-github/BrainCLIP/tree/main/save) and quickly try it by the 'infer.py.'
+If you want to use our model, you can download the pre-trained HEClip model from [here](https://drive.google.com/file/d/14RwK9U2LmgwM6YXHK9INy5UD1MbEmy1F/view?usp=drive_link) and quickly try it by the 'infer.py.'
    
