@@ -12,8 +12,8 @@ import torch
 import torch.distributed as dist
 import torch.utils.data.distributed
 
-from dt_load import CLIPDataset
-from models import CLIPModel
+from dt_load import HECLIPDataset
+from models import HECLIPModel
 from utils import AvgMeter
 from torch.utils.data import DataLoader
 import argparse
@@ -34,28 +34,28 @@ parser.add_argument('--device', type=str, default='cuda' if torch.cuda.is_availa
 def build_loaders(args):
     print("Building loaders")
     if args.dataset=='bleep_data':
-        dataset = CLIPDataset(image_path = "../image/GEX_C73_A1_Merged.tiff",
+        dataset = HECLIPDataset(image_path = "../image/GEX_C73_A1_Merged.tiff",
                    spatial_pos_path = "../GSE240429_data/data/tissue_pos_matrices/tissue_positions_list_1.csv",
                    reduced_mtx_path = "../GSE240429_data/data/filtered_expression_matrices/1/harmony_matrix.npy",
                    barcode_path = "../GSE240429_data/data/filtered_expression_matrices/1/barcodes.tsv")
-        dataset2 = CLIPDataset(image_path = "../image/GEX_C73_B1_Merged.tiff",
+        dataset2 = HECLIPDataset(image_path = "../image/GEX_C73_B1_Merged.tiff",
                     spatial_pos_path = "../GSE240429_data/data/tissue_pos_matrices/tissue_positions_list_2.csv",
                     reduced_mtx_path = "../GSE240429_data/data/filtered_expression_matrices/2/harmony_matrix.npy",
                     barcode_path = "../GSE240429_data/data/filtered_expression_matrices/2/barcodes.tsv")
-        dataset4 = CLIPDataset(image_path = "../image/GEX_C73_D1_Merged.tiff",
+        dataset4 = HECLIPDataset(image_path = "../image/GEX_C73_D1_Merged.tiff",
                     spatial_pos_path = "../GSE240429_data/data/tissue_pos_matrices/tissue_positions_list_4.csv",
                     reduced_mtx_path = "../GSE240429_data/data/filtered_expression_matrices/4/harmony_matrix.npy",
                     barcode_path = "../GSE240429_data/data/filtered_expression_matrices/4/barcodes.tsv")
         # repeat for data augmentation
-        dataset5 = CLIPDataset(image_path = "../image/GEX_C73_A1_Merged.tiff",
+        dataset5 = HECLIPDataset(image_path = "../image/GEX_C73_A1_Merged.tiff",
                    spatial_pos_path = "../GSE240429_data/data/tissue_pos_matrices/tissue_positions_list_1.csv",
                    reduced_mtx_path = "../GSE240429_data/data/filtered_expression_matrices/1/harmony_matrix.npy",
                    barcode_path = "../GSE240429_data/data/filtered_expression_matrices/1/barcodes.tsv")
-        dataset6 = CLIPDataset(image_path = "../image/GEX_C73_B1_Merged.tiff",
+        dataset6 = HECLIPDataset(image_path = "../image/GEX_C73_B1_Merged.tiff",
                     spatial_pos_path = "../GSE240429_data/data/tissue_pos_matrices/tissue_positions_list_2.csv",
                     reduced_mtx_path = "../GSE240429_data/data/filtered_expression_matrices/2/harmony_matrix.npy",
                     barcode_path = "../GSE240429_data/data/filtered_expression_matrices/2/barcodes.tsv")
-        dataset7 = CLIPDataset(image_path = "../image/GEX_C73_D1_Merged.tiff",
+        dataset7 = HECLIPDataset(image_path = "../image/GEX_C73_D1_Merged.tiff",
                     spatial_pos_path = "../GSE240429_data/data/tissue_pos_matrices/tissue_positions_list_4.csv",
                     reduced_mtx_path = "../GSE240429_data/data/filtered_expression_matrices/4/harmony_matrix.npy",
                     barcode_path = "../GSE240429_data/data/filtered_expression_matrices/4/barcodes.tsv")
@@ -115,7 +115,7 @@ def main():
     print("Starting...")
     args = parser.parse_args()
 
-    model = CLIPModel().to(args.device)
+    model = HECLIPModel().to(args.device)
 
     train_loader, test_loader = build_loaders(args)
 
