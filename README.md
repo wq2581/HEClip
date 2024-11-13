@@ -14,7 +14,7 @@ HEClip is an innovative CLIP-based model designed to predict gene expression dir
 
 ## Installation
 Download HEClip:
-```git clone https://github.com/QSong-github/BrainCLIP```
+```git clone https://github.com/wq2581/HEClip```
 
 Install Environment:
 ```pip install -r requirements.txt``` or ```conda env create -f environment.yaml```
