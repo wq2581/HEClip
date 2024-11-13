@@ -45,7 +45,7 @@ class ProjectionHead(nn.Module):
         x = self.layer_norm(x)
         return x
 
-class CLIPModel(nn.Module):
+class HECLIPModel(nn.Module):
     def __init__(
             self,
             temperature=1.0,
