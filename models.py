@@ -1,3 +1,9 @@
+"""
+The code for this work was developed based on the BLEEP model and we are grateful for their contribution.
+Ref：
+https://github.com/bowang-lab/BLEEP
+https://proceedings.neurips.cc/paper_files/paper/2023/file/df656d6ed77b565e8dcdfbf568aead0a-Paper-Conference.pdf
+"""
 import torch.nn.functional as F
 from torch import nn
 import timm
