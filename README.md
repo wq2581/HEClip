@@ -33,7 +33,7 @@ Install Environment:
    
    (2) download the GSE data.
    ```bash
-   $ cd /path/GSE24029_data
+   $ cd /path/GSE240429_data
    $ wget -O GSM7697868_GEX_C73_A1_Merged.tiff.gz "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM7697868&format=file&file=GSM7697868%5FGEX%5FC73%5FA1%5FMerged%2Etiff%2Egz"
    $ wget -O GSM7697869_GEX_C73_B1_Merged.tiff.gz "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM7697869&format=file&file=GSM7697869%5FGEX%5FC73%5FB1%5FMerged%2Etiff%2Egz"
    $ wget -O GSM7697871_GEX_C73_D1_Merged.tiff.gz "https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM7697871&format=file&file=GSM7697871%5FGEX%5FC73%5FD1%5FMerged%2Etiff%2Egz"
@@ -42,7 +42,7 @@ Install Environment:
 
    (3) Train the model.
    ```bash
-   $ cd /path/to/Uni
+   $ cd /path/to/main
    $ python main.py
    ```
    
@@ -50,6 +50,7 @@ Install Environment:
 
    (4) Inference.
    ```bash
+   $ cd /path/to/main
    $ python infer.py
    ```
 
