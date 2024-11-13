@@ -7,7 +7,7 @@ import random
 from PIL import Image
 
 
-class CLIPDataset(torch.utils.data.Dataset):
+class HECLIPDataset(torch.utils.data.Dataset):
     def __init__(self, image_path, spatial_pos_path, barcode_path, reduced_mtx_path):
         # image_path is the path of an entire slice of visium h&e stained image (~2.5GB)
 
