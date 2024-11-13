@@ -28,11 +28,7 @@ Install Environment:
    (1) download the iamge data.
    ```bash
    $ cd /path/to/AD_43SNP.zip
-   $ unzip AD_43SNP.zip
-
-   $ cd /path/to/reukbb.zip
-   $ unzip reukbb.zip
-   ```
+   $ gdown --folder https://drive.google.com/drive/folders/1zssdBgGyzy3Jl9ISdWd1pEZKVhf1VRGz
    
    (2) download the GSE data.
    ```bash
