@@ -27,7 +27,7 @@ sc.pp.filter_genes(adata, min_counts=1)
 
 
 
-sc.pp.highly_variable_genes(adata, n_top_genes=5)
+sc.pp.highly_variable_genes(adata, n_top_genes=1000)
 
 
 adata_highly_variable = adata[:, adata.var['highly_variable']]
